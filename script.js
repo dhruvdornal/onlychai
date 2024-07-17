@@ -16,5 +16,5 @@ function handleFormSubmit(event) {
           alert("Failed to copy")
         });
     });
-    window.location.href = `https://dhruvdornal.github.io/onlychai/support.html?name=${encodedName}&upi=${encodedUPI}`; // Navigate with parameters
+    //window.location.href = `https://dhruvdornal.github.io/onlychai/support.html?name=${encodedName}&upi=${encodedUPI}`; // Navigate with parameters
 }
