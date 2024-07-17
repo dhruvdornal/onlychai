@@ -4,17 +4,17 @@ function handleFormSubmit(event) {
     const upi = document.getElementById('upi').value;
     const encodedName = encodeURIComponent(name);
     const encodedUPI = encodeURIComponent(upi);
-    const thisText = `support.html?name=${encodedName}&upi=${encodedUPI}`;
-    const copyButton = document.getElementById('copyButton');
+    // const thisText = `support.html?name=${encodedName}&upi=${encodedUPI}`;
+    // const copyButton = document.getElementById('copyButton');
 
-    copyButton.addEventListener('click', () => {
-      navigator.clipboard.writeText(thisText)
-        .then(() => {
-          alert("Text copied to clipboard")
-        })
-        .catch(err => {
-          alert("Failed to copy")
-        });
-    });
-    // window.location.href = `support.html?name=${encodedName}&upi=${encodedUPI}`; // Navigate with parameters
+    // copyButton.addEventListener('click', () => {
+    //   navigator.clipboard.writeText(thisText)
+    //     .then(() => {
+    //       alert("Text copied to clipboard")
+    //     })
+    //     .catch(err => {
+    //       alert("Failed to copy")
+    //     });
+    // });
+    window.location.href = `support.html?name=${encodedName}&upi=${encodedUPI}`; // Navigate with parameters
 }
