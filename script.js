@@ -4,7 +4,7 @@ function handleFormSubmit(event) {
     const upi = document.getElementById('upi').value;
     const encodedName = encodeURIComponent(name);
     const encodedUPI = encodeURIComponent(upi);
-    const thisText = `https://dhruvdornal.github.io/onlychai/support.html?name=${encodedName}&upi=${encodedUPI}`;
+    const thisText = `https://dhruvdornal.github.io/onlytea/support.html?name=${encodedName}&upi=${encodedUPI}`;
     const copyButton = document.getElementById('copyButton');
 
     copyButton.addEventListener('click', () => {
